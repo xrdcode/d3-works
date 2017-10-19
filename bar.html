@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<head>
+    <style>
+        form {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        svg {
+            font: 10px sans-serif;
+        }
+
+        .center-label {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12" style="text-align: center; " >
+            <div id="chart-container" class="panel panel-default">
+                <div class="panel-heading">Grafik Treemap</div>
+                <div class="panel-body"  style="height: 800px !important;">
+                    <svg width="100%" height="100%"></svg>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script src="jquery-3.2.1.min.js"></script>
+<script src="d3.v4.js"></script>
+<script src="reyhan.js"></script>
+<script>
+
+    var tmp = [];
+    var colors = [
+        "#EF5350",
+        "#F06292",
+        "#880E4F",
+        "#9C27B0",
+        "#E1BEE7",
+        "#4A148C",
+        "#3F51B5",
+        "#5C6BC0",
+        "#E8EAF6",
+        "#2196F3",
+        "#0277BD",
+        "#00BCD4",
+        "#009688",
+        "#A7FFEB",
+        "#4CAF50",
+        "#1B5E20",
+        "#AED581",
+        "#76FF03",
+        "#CDDC39",
+        "#FFEB3B",
+        "#F57F17",
+        "#FF5722"
+    ];
+
+    colors = shuffle(colors);
+
+    var svg = d3.select("svg"),
+        width = +document.getElementById("chart-container").clientWidth,
+        height = +document.getElementById("chart-container").clientHeight;
+
+    var fader = function(color) {
+        return hex2rgb(color, 1);
+    };
+    color = d3.scaleOrdinal(colors.map(fader));
+    format = d3.format(",d");
+
+    var treemap = d3.treemap()
+        .tile(d3.treemapSquarify.ratio(1))
+        .size([width / 4, height])
+        .round(true)
+        .paddingInner(1);
+
+    d3.json("dummy.json", function(error, data) {
+        if (error) throw error;
+
+        var root = d3.hierarchy(data)
+            .eachBefore(function(d) { d.data.id = (d.parent ? d.parent.data.id + "." : "") + d.data.name.replace(/\s/g, "_"); })
+            .sum(sumBySize)
+            .sort(function(a, b) { return b.height - a.height || b.value - a.value; });
+
+        treemap(root);
+
+        var cell = svg.selectAll("g")
+            .data(root.leaves())
+            .enter().append("g")
+            .attr("transform", function(d) { return "translate(" + d.x0 + "," + d.y0 + ")"; });
+
+        cell.append("rect")
+            .attr("id", function(d) { return d.data.id; })
+            .attr("width", function(d) { return d.x1 - d.x0; })
+            .attr("height", function(d) { return d.y1 - d.y0; })
+            .attr("fill", function(d) {
+                if(tmp.indexOf(d.parent.data.name) == -1) {
+                    tmp.push(d.parent.data.name);
+                }
+                return color(d.parent.data.id);
+            })
+        ;
+
+        cell.append("clipPath")
+            .attr("id", function(d) { return "clip-" + d.data.id; })
+            .append("use")
+            .attr("xlink:href", function(d) { return "#" + d.data.id; });
+
+        cell.append("text")
+            .attr("clip-path", function(d) { return "url(#clip-" + d.data.id + ")"; })
+            .selectAll("tspan")
+            .data(function(d) { return d.data.name.split(/(?=[A-Z][^A-Z])/g); })
+            .enter().append("tspan")
+            .attr("x", 4)
+            .attr("y", function(d, i) { return 13 + i * 10; })
+            .text(function(d) { return d; });
+
+        cell.append("title")
+            .text(function(d) { return d.data.id + "\n" + format(d.value); });
+
+
+
+
+        d3.selectAll("input")
+            .data([sumBySize, sumByCount], function(d) { return d ? d.name : this.value; })
+            .on("change", changed);
+
+
+        function changed(sum) {
+            timeout.stop();
+
+            treemap(root.sum(sum));
+
+            cell.transition()
+                .duration(750)
+                .attr("transform", function(d) { return "translate(" + d.x0 + "," + d.y0 + ")"; })
+                .select("rect")
+                .attr("width", function(d) { return d.x1 - d.x0; })
+                .attr("height", function(d) { return d.y1 - d.y0; });
+        }
+    });
+
+    function sumByCount(d) {
+        return d.children ? 0 : 1;
+    }
+
+    function sumBySize(d) {
+        return d.size;
+    }
+
+    $(document).ready(function() {
+        $("g").hover(
+            function()  {
+                console.log("append");
+                $(this).append("<text>LALA</text>");
+            },
+            function() {
+                $(this).find("text:last").remove();
+                console.log("remove");
+            }
+        )
+    });
+
+</script>
+
+</body>

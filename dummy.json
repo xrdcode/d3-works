@@ -1,0 +1,174 @@
+{
+  "name": "result",
+  "children": [
+    {
+      "name": "STATUS PENGUASAAN BANGUNAN TEMPAT TINGGAL YANG DITEMPATI",
+      "children": [
+        {"name": "Milik Sendiri", "size": 334313},
+        {"name": "Kontrak/Sewa", "size": 1746},
+        {"name": "Bebas Sewa", "size": 29066},
+        {"name": "Dinas", "size": 30},
+        {"name": "Lainnya", "size": 3127}
+      ]
+    },
+    {
+      "name": "STATUS LAHAN TEMPAT TANGGAL YANG DITEMPATI",
+      "children": [
+        {"name": "Milik Sendiri", "size": 307958},
+        {"name": "Milik Orang Lain", "size": 21043},
+        {"name": "Tanah Negara", "size": 2485},
+        {"name": "Unknown", "size": 2485},
+        {"name": "Lainnya", "size": 2893}
+      ]
+    },
+    {
+      "name": "JENIS LANTAI TERLUAS",
+      "children": [
+        {"name": "Marmer/Granit", "size": 425},
+        {"name": "Keramik", "size": 35149},
+        {"name": "Parker/Vinil/Permadani", "size": 175},
+        {"name": "Ubin/Tegel/Teraso", "size": 23976},
+        {"name": "Kayu/Papan Kualitas Tinggi", "size": 1578},
+        {"name": "Semen/Bata Merah", "size": 157331},
+        {"name": "Bambu", "size": 48},
+        {"name": "Kayu/Papan Kualitas Rendah", "size": 1771},
+        {"name": "Tanah", "size": 147601},
+        {"name": "Lainnya", "size": 227},
+        {"name": "Unknown", "size": 1}
+      ]
+    },
+    {
+      "name": "JENIS DINDING TERLUAR",
+      "children": [
+        {"name": "Anyaman Bambu", "size": 16969},
+        {"name": "Bambu", "size": 1619},
+        {"name": "Batang Kayu", "size": 140},
+        {"name": "Kayu", "size": 130539},
+        {"name": "Plesteran Anyaman Bambu/Kawat", "size": 2300},
+        {"name": "Tembok", "size": 214326},
+        {"name": "Unknown", "size": 1},
+        {"name": "Lainnya", "size": 2388}
+      ]
+    },
+    {
+      "name": "KONDISI DINDING TERLUAR",
+      "children": [
+        {"name": "Bagus/Kualitas Tinggi", "size": 64217},
+        {"name": "Jelek/Kualitas Rendah", "size": 282970},
+        {"name": "Unknown", "size": 1442},
+        {"name": "-", "size": 19655}
+      ]
+    },
+    {
+      "name": "JENIS ATAP TERLUAS",
+      "children": [
+        {"name": "Beton/Genteng Beton", "size": 1038},
+        {"name": "Genteng Keramik", "size": 610},
+        {"name": "Genteng Metal", "size": 582},
+        {"name": "Genteng Tanah Liat", "size": 319859},
+        {"name": "Asbes", "size": 5776},
+        {"name": "Seng", "size": 40056},
+        {"name": "Sirap", "size": 219},
+        {"name": "Bambu", "size": 23},
+        {"name": "Jerami/Ijuk/Daun/Rumbia", "size": 1442},
+        {"name": "-", "size": 1},
+        {"name": "Lainnya", "size": 56}
+      ]
+    },
+    {
+      "name": "KONDISI ATAP TERLUAS",
+      "children": [
+        {"name": "Bagus/Kualitas Tinggi", "size": 64790},
+        {"name": "Jelek/Kualitas Rendah", "size": 303348},
+        {"name": "Unknown", "size": 68},
+        {"name": "-", "size": 78}
+      ]
+    },
+    {
+      "name": "SUMBER AIR MINUM",
+      "children": [
+        {"name": "Air Hujan", "size": 6574},
+        {"name": "Air isi ulang", "size": 8056},
+        {"name": "Air kemasan bermerk", "size": 351},
+        {"name": "Air Sungai/danau/waduk", "size": 2280},
+        {"name": "Average", "size": 891},
+        {"name": "Leding eceran", "size": 2025},
+        {"name": "Leding meteran", "size": 34582},
+        {"name": "Mata air tak terlindung", "size": 19682},
+        {"name": "Mata air terlindung", "size": 56066},
+        {"name": "Sumur bor/pompa", "size": 56202},
+        {"name": "Sumur tak terlindung", "size": 25268},
+        {"name": "Sumur terlindung", "size": 156735},
+        {"name": "Lainnya", "size": 461},
+        {"name": "-", "size": 1}
+      ]
+    },
+    {
+      "name": "CARA MEMPEROLEH AIR MINUM",
+      "children": [
+        {"name": "Langganan", "size": 43892},
+        {"name": "Membeli eceran", "size": 12791},
+        {"name": "Tidak membeli", "size": 311600},
+        {"name": "-", "size": 1}
+      ]
+    },
+    {
+      "name": "SUMBER PENERANGAN UTAMA",
+      "children": [
+        {"name": "Listrik non PLN", "size": 646},
+        {"name": "Listrik PLN", "size": 366493},
+        {"name": "-", "size": 1145}
+      ]
+    },
+    {
+      "name": "DAYA TERPASANG",
+      "children": [
+        {"name": "1.300 watt", "size": 486},
+        {"name": "2.200 watt", "size": 83},
+        {"name": "450 watt", "size": 294892},
+        {"name": "900 watt", "size": 16225},
+        {"name": "Lebih dari 2.200 watt", "size": 45},
+        {"name": "Tanpa meteran", "size": 54762},
+        {"name": "Unknown", "size": 475},
+        {"name": "-", "size": 1316}
+      ]
+    },
+    {
+      "name": "BAHAN BAKAR/ENERGI UTAMA MEMASAK",
+      "children": [
+        {"name": "Arang", "size": 233},
+        {"name": "Briket", "size": 139},
+        {"name": "Gas 3 kg", "size": 130657},
+        {"name": "Gas kota/biogas", "size": 85},
+        {"name": "Gas lebih dari 3 kg", "size": 2263},
+        {"name": "Kayu bakar", "size": 227766},
+        {"name": "Listrik", "size": 1985},
+        {"name": "Minyak tanah", "size": 204},
+        {"name": "Tidak memasak di rumah", "size": 4951},
+        {"name": "-", "size": 1}
+      ]
+    },
+    {
+      "name": "PENGGUNAAN FASILITAS TEMPAT BUANG AIR BESAR",
+      "children": [
+        {"name": "Bersama", "size": 70906},
+        {"name": "Sendiri", "size": 219342},
+        {"name": "Tidak Ada", "size": 48474},
+        {"name": "Umum", "size": 29560},
+        {"name": "-", "size": 2}
+      ]
+    },
+    {
+      "name": "TEMPAT PEMBUANGAN AKHIR TINJA",
+      "children": [
+        {"name": "Kolam/Sawah/Sungai/Danau/Laut", "size": 100685},
+        {"name": "Lainnya", "size": 1504},
+        {"name": "Lubang Tanah", "size": 91271},
+        {"name": "Pantai/tanah lapang/ kebun", "size": 3390},
+        {"name": "SPAL", "size": 3607},
+        {"name": "Tangki", "size": 167822},
+        {"name": "-", "size": 891}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "name": "result",
+  "children": [
+    {
+      "name": "RUMAH TANGGA MEMILIKI SENDIRI ASET BERGERAK",
+      "children": [
+        {
+          "name": "Tabung Gas",
+          "children" : [
+            {"name": "Ya", "size": 2285},
+            {"name": "Tidak", "size": 368038},
+            {"name": "-", "size": 28},
+            {"name": "Unknown", "size": 4}
+          ]
+        },
+        {
+          "name": "AC",
+          "children" : [
+            {"name": "Ya", "size": 214},
+            {"name": "Tidak", "size": 368038},
+            {"name": "-", "size": 28},
+            {"name": "Unknown", "size": 4}
+          ]
+        },
+        {
+          "name": "Lemari Es",
+          "children" : [
+            {"name": "Ya", "size": 19361},
+            {"name": "Tidak", "size": 348889},
+            {"name": "-", "size": 30},
+            {"name": "Unknown", "size": 4}
+          ]
+        },
+
+        {
+          "name": "Pemanas Air",
+          "children" : [
+            {"name": "Ya", "size": 422},
+            {"name": "Tidak", "size": 367830},
+            {"name": "-", "size": 28},
+            {"name": "Unknown", "size": 4}
+          ]
+        },
+        {
+          "name": "Telepon Rumah",
+          "children" : [
+            {"name": "Ya", "size": 447},
+            {"name": "Tidak", "size": 367805},
+            {"name": "-", "size": 28},
+            {"name": "Unknown", "size": 4}
+          ]
+        },
+        {
+          "name": "Emas/perhiasan & Tabungan",
+          "children" : [
+            {"name": "Ya", "size": 9290},
+            {"name": "Tidak", "size": 358961},
+            {"name": "-", "size": 29},
+            {"name": "Unknown", "size": 4}
+          ]
+        },
+        {
+          "name": "Komputer/laptop",
+          "children" : [
+            {"name": "Ya", "size": 2387},
+            {"name": "Tidak", "size": 365864},
+            {"name": "-", "size": 29},
+            {"name": "Unknown", "size": 4}
+          ]
+        },
+        {
+          "name": "Sepeda",
+          "children" : [
+            {"name": "Ya", "size": 175864},
+            {"name": "Tidak", "size": 192388},
+            {"name": "-", "size": 28},
+            {"name": "Unknown", "size": 4}
+          ]
+        },
+        {
+          "name": "Sepeda Motor",
+          "children" : [
+            {"name": "Ya", "size": 179995},
+            {"name": "Tidak", "size": 188258},
+            {"name": "-", "size": 27},
+            {"name": "Unknown", "size": 4}
+          ]
+        },
+        {
+          "name": "Mobil",
+          "children" : [
+            {"name": "Ya", "size": 821},
+            {"name": "Tidak", "size": 367431},
+            {"name": "-", "size": 28},
+            {"name": "Unknown", "size": 4}
+          ]
+        },
+        {
+          "name": "Perahu",
+          "children" : [
+            {"name": "Ya", "size": 96},
+            {"name": "Tidak", "size": 368156},
+            {"name": "-", "size": 28},
+            {"name": "Unknown", "size": 4}
+          ]
+        },
+        {
+          "name": "Motor tempel",
+          "children" : [
+            {"name": "Ya", "size": 85},
+            {"name": "Tidak", "size": 368166},
+            {"name": "-", "size": 29},
+            {"name": "Unknown", "size": 4}
+          ]
+        },
+        {
+          "name": "Perahu motor, Berapa GT",
+          "children" : [
+            {"name": "Ya", "size": 101},
+            {"name": "Tidak", "size": 368156},
+            {"name": "-", "size": 28},
+            {"name": "Unknown", "size": 4}
+          ]
+        },
+        {
+          "name": "Kapal, Berapa GT",
+          "children" : [
+            {"name": "Ya", "size": 35},
+            {"name": "Tidak", "size": 368217},
+            {"name": "-", "size": 28},
+            {"name": "Unknown", "size": 4}
+          ]
+        },
+        {
+          "name": "Lahan, Berapa m²",
+          "children" : [
+            {"name": "Ya", "size": 326888},
+            {"name": "Tidak", "size": 41358},
+            {"name": "-", "size": 33},
+            {"name": "Unknown", "size": 5}
+          ]
+        },
+        {
+          "name": "Rumah di tempat lain",
+          "children" : [
+            {"name": "Ya", "size": 2596},
+            {"name": "Tidak", "size": 365645},
+            {"name": "-", "size": 36},
+            {"name": "Unknown", "size": 7}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "JENIS TERNAK/UNGGAS",
+      "children": [
+        {"name": "Babi", "size": 1002},
+        {"name": "Kambing", "size": 146099},
+        {"name": "Kuda", "size": 412},
+        {"name": "Sapi", "size": 78403},
+        {"name": "Kerbau", "size": 1063}
+      ]
+    }
+  ]
+}
